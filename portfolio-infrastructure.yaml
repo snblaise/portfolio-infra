@@ -18,7 +18,7 @@ Resources:
   LoggingBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: cloudfront-logs-${AccountId}
+      BucketName: !Sub '${AWS::AccountId}-cloudfront-logs'
       VersioningConfiguration:
         Status: Enabled
       PublicAccessBlockConfiguration:
