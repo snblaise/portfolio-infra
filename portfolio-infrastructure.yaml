@@ -80,7 +80,7 @@ Resources:
     Type: AWS::CloudFront::OriginAccessControl
     Properties:
       OriginAccessControlConfig:
-        Name: !Sub ${ProjectName}-oac
+        Name: !Sub ${AWS::AccountId}-oac
         OriginAccessControlOriginType: s3
         SigningBehavior: always
         SigningProtocol: sigv4
@@ -128,7 +128,7 @@ Resources:
   ArtifactsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub ${ProjectName}-artifacts
+      BucketName: !Sub ${AWS::AccountId}-artifacts
       VersioningConfiguration:
         Status: Enabled  
       PublicAccessBlockConfiguration:
