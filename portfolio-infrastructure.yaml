@@ -38,7 +38,7 @@ Resources:
   WebsiteBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub ${ProjectName}-website
+      BucketName: !Sub ${AWS::AccountId}-website
       VersioningConfiguration:
         Status: Enabled
       WebsiteConfiguration:
