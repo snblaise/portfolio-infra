@@ -128,7 +128,7 @@ Resources:
   ArtifactsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub ${ProjectName}-artifacts
+      BucketName: !Sub ${AWS::AccountId}-artifacts
       VersioningConfiguration:
         Status: Enabled  
       PublicAccessBlockConfiguration:
