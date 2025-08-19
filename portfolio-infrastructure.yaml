@@ -4,7 +4,7 @@ Description: DevSecOps Portfolio - S3 + CloudFront + CI/CD Pipeline (Security En
 Parameters:
   ProjectName:
     Type: String
-    Default: devsecops-portfolio
+    Default: portfolio-infra
     Description: Name of the project
 
 
